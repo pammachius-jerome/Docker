@@ -12,6 +12,7 @@ try {
     echo "connecté";
 
 }catch(PDOException $exception) {
+    phpinfo();
     echo 'Une erreur est survenue : ' . $exception->getMessage();
     die;
 }
